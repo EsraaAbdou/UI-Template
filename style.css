@@ -1,0 +1,356 @@
+/*------------------ General Styles ------------------*/
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+.main-text{
+    color: #4F5977;
+}
+.secondary-text{
+    color: #A8AEBD;
+}
+.text-bold{
+    font-weight: bold;
+}
+.main-bg{
+    background-color: #4F5977;
+}
+.secondary-bg{
+    background-color: #47516F; 
+}
+.container{
+    width: 90%;
+}
+.m-center, .container, .container-80{
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.flex-row{
+    flex-flow: row wrap;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.align-top{
+    align-items: flex-start;
+}
+.text-center{
+    text-align: center;
+}
+.h-100{
+    height: 100%;
+}
+button{
+    background-color: #7BDF95;
+    color: #FFF;
+    padding: 10px 35px; /* 0.625em 2.188em*/
+}
+button:hover{
+    cursor: pointer;
+}
+button, input{
+    border: 2px solid #47516F;
+}
+h1, h2, h3, button, .text-bolder{
+    font-weight: 900;
+}
+h2{
+    font-size: 2em; /* 2em*/
+}
+.mb-0{
+    margin-bottom: 0;
+}
+.mt-0{
+    margin-top: 0;
+}
+.mb-20{
+    margin-bottom: 20px; /* 1.25em */
+}
+.mb-50{
+    margin-bottom: 50px;
+}
+section{
+    padding: 50px 0; /* 3.125em */
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+li{
+    display: inline-block;
+    margin-right: 20px; /* 1.25em */
+}
+li:last-of-type{
+    margin-right: 0;
+}
+a{
+    text-decoration: none;
+}
+.img-div{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./images/pic.png');
+}
+/*------------------ End of general styles ------------------*/
+/*------------------ Header ------------------*/
+nav{
+    height: 70px;
+}
+.navbar-toggle{
+    display: none;
+}
+nav img{
+    height: 50px;
+}
+header .main-bg{
+    height: calc(100vh - 70px);
+}
+.partial-container{
+    width: 50%;
+}
+h1{
+    font-size: 2.5em;
+}
+/*------------------ End of header ------------------*/
+/*------------------ Features Section ------------------*/
+.flex-50{
+    flex-basis: 50%;
+}
+.img-container{
+    padding-right: 30px;
+}
+.img-border{
+    border: 1px solid #4F5977;
+    border-radius: 50%;
+}
+.pr-20{
+    padding-right: 20px;
+}
+/*------------------ End of features Section ------------------*/
+/*------------------  Second Section ------------------*/
+.flex-33{
+    flex-basis: 33.3333%;
+}
+.noPadding{
+    padding: 0;
+}
+.container-80{
+    width: 80%;
+    padding: 100px 0;
+}
+.container-80 a{
+    color: #FFF;
+    text-decoration: none;
+}
+/*------------------ End of second Section ------------------*/
+/*------------------  Work Section ------------------*/
+.selected{
+    color: #4F5977;
+}
+.mb-100{
+    margin-bottom: 100px;
+}
+.flex-25{
+    flex-basis: 25%;
+}
+.work-section .img-div{
+    width: 90%;
+    height: 250px;
+}
+/*------------------ End of work Section ------------------*/
+/*------------------ Buttons Section ------------------*/
+.transparent-btn{
+    background-color: transparent;
+}
+.w-50{
+    width: 50%;
+}
+/*------------------ End of buttons Section ------------------*/
+/*------------------ Blog Section ------------------*/
+.blog-section .img-div{
+    height: 100%;
+    /* width: 300px; */
+}
+.flex-45{
+    flex-basis: 45%;
+}
+.mr-20{
+    margin-right: 20px; 
+}
+/*------------------ End of blog Section ------------------*/
+/*------------------ Email Section ------------------*/
+input{
+    padding: 11px 10px; 
+    width: 250px;
+}
+input::placeholder{
+    color: #A8AEBD;
+}
+.less-padding{
+    padding: 30px 0; 
+}
+/*------------------ End of email Section ------------------*/
+/*------------------ Percentage Section ------------------*/
+.div-border{
+    border: 2px solid #4F5977;
+    border-radius: 50%;
+    padding: 30px; 
+    margin-bottom: 10px;
+}
+/*------------------ End of percentage Section ------------------*/
+/*------------------ Contact Section ------------------*/
+.font-border{
+    height: 30px; 
+    width:30px; 
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.font-border .fab{
+    line-height: 30px!important;
+}
+.grid-logo{
+    grid-area: grid-logo;
+}
+.grid-about{
+    grid-area: grid-about;
+}
+.grid-contact{
+    grid-area: grid-contact;
+}
+.grid-main-content{
+    grid-area: grid-main-content;
+}
+.grid-about-content{
+    grid-area: grid-about-content;
+}
+.grid-contact-content{
+    grid-area: grid-contact-content;   
+}
+.grid-main-button{
+    grid-area: grid-main-button;
+}
+.grid-about-button{
+    grid-area: grid-about-button;
+}
+.grid-contact-links{
+    grid-area: grid-contact-links;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "grid-logo grid-about grid-contact"
+                         "grid-main-content grid-about-content grid-contact-content"
+                         "grid-main-button grid-about-button grid-contact-links";
+}
+.justify-center{
+    justify-content: center;
+}
+.mr-10{
+    margin-right: 10px;
+}
+/*------------------ End of contact Section ------------------*/
+/*------------------ Footer Section ------------------*/
+footer{
+    background-color: #485270;
+    margin: 0;
+}
+footer a{
+    color: #FFF!important;
+}
+.py-10{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/*------------------ End of footer Section ------------------*/
+/* Mobile phones & tablets */
+@media (max-width: 767px) {
+     .partial-container{
+        width: 90%;
+    }
+    nav{
+        height: auto;
+    }
+    nav .container{
+        display: block;
+    }
+    .navbar-toggle {
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        cursor: pointer; 
+        font-size: 24px;
+    }
+    .main-nav {
+        display: none;
+    }
+    .main-nav li {
+        display: block;
+        text-align: center;
+        margin: 15px auto;
+    }
+    .active {
+        display: block;
+    }
+    .flex-25, .flex-33, .flex-45, .flex-50{
+        flex-basis: 100%;
+    }
+    .percentage .flex-25{
+        flex-basis: 50%;
+    }
+    .blog-section .img-div{
+        height: 200px;
+    }
+    .work-section .img-div{
+        width: 100%;
+    }
+    .mb-mobile{
+        margin-bottom: 20px;
+    }
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-areas: "grid-logo"
+                             "grid-main-content"
+                             "grid-main-button"
+                             "grid-about"
+                             "grid-about-content"
+                             "grid-about-button"
+                             "grid-contact"
+                             "grid-contact-content"
+                             "grid-contact-links";
+    }
+}
+
+/* Mobile phones only */
+@media (max-width: 540px) {
+    .percentage .flex-25{
+        flex-basis: 100%;
+    }
+    .features .img-container{
+        display: none;
+    }
+    h1{
+        font-size: 2em;
+    }
+}
+
+/* Special handling */
+@media (max-width: 380px) {
+    .work-section ul, footer ul{
+        font-size: 70%;
+    }
+}
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1400px) {
+    .container{
+        width: 1200px;
+    }
+}
